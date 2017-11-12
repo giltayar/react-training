@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script>
+    const e = React.createElement;
+
+    function Numeric() {
+      return e('div', {},
+        [
+          e('input', {type: 'button', value: '-'}),
+          e('span', {}, '0'),
+          e('input', {type: 'button', value: '+'}),
+        ])
+    }
+    ReactDOM.render(e(Numeric), document.getElementById('root'))
+  </script>
+</body>
+</html>
+
+<!--
+  * A "component" is just a function that returns a React Element. No more, no less.
+-->

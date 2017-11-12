@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script>
+    const e = React.createElement
+
+    const divElement = e('div', {}, 'Hello, world')
+
+    ReactDOM.render(divElement, document.getElementById('root'))
+  </script>
+</body>
+</html>
+<!--
+  * Just shortening the "React.createElement"
+-->

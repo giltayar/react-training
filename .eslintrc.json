@@ -1,0 +1,24 @@
+{
+  "extends": ["standard", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "html",
+    "react"
+  ],
+  "rules": {
+    "no-throw-literal": 0,
+    "react/prop-types": 0
+  }
+}
